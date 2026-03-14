@@ -1,14 +1,13 @@
 
 ---
 
-# Full Stack Task Manager
+> # Full Stack Task Manager
 > Secure **Task Management Application** built with **Next.js**, **Node.js**, **Express**, and **MongoDB**.
 > The project demonstrates **JWT authentication, encrypted APIs, secure cookies, and full CRUD task management** with a modern frontend dashboard.
 
 ---
 
-# Live Demo
-
+> # Live Demo
 > Frontend (Deployed on Vercel): **[https://fullstack-task-manager-ebon.vercel.app](https://fullstack-task-manager-ebon.vercel.app)**
 
 # Demo Credentials
@@ -19,6 +18,11 @@ Email: ankit1@test.com
 Password: 12345678
 ```
 
+### Desktop View
+<img src="frontend/public/DesktopView.png" width="1000"/>
+
+### Mobile View
+<img src="frontend/public/mobileview.jpeg" width="600"/>
 ---
 
 # Project Architecture
