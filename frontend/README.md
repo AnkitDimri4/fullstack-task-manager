@@ -5,6 +5,13 @@
 > Frontend for the **Task Management Application** built with **Next.js**, connecting to the secure backend API for authentication and task management.
 > The application allows users to **register, login, and manage tasks** through a clean dashboard interface while interacting with encrypted backend APIs.
 
+
+### Desktop View
+<img src="public/DesktopView.png" width="1000"/>
+
+### Mobile View
+<img src="public/mobileview.jpeg" width="600"/>
+
 ---
 
 ## Features
