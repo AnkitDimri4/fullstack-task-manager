@@ -38,10 +38,9 @@ exports.registerUser = async (req, res) => {
     });
   }
 };
+
 exports.loginUser = async (req, res) => {
-
   try {
-
     const { email, password } = req.body;
 
     const user = await User.findOne({ email });
@@ -49,7 +48,7 @@ exports.loginUser = async (req, res) => {
     if (!user) {
       return res.status(401).json({
         success: false,
-        data: encryptData({ message: "Invalid credentials" })
+        data: encryptData({ message: "Invalid credentials" }),
       });
     }
 
@@ -58,7 +57,7 @@ exports.loginUser = async (req, res) => {
     if (!isMatch) {
       return res.status(401).json({
         success: false,
-        data: encryptData({ message: "Invalid credentials" })
+        data: encryptData({ message: "Invalid credentials" }),
       });
     }
 
@@ -68,26 +67,29 @@ exports.loginUser = async (req, res) => {
       { expiresIn: "1d" }
     );
 
+    const isProduction = process.env.NODE_ENV === "production";
+
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "strict"
+      secure: isProduction,           
+      sameSite: isProduction ? "none" : "lax", 
+      partitioned: isProduction,             
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+      path: "/",
     });
 
     res.status(200).json({
       success: true,
       data: encryptData({
         message: "Login successful",
-        userId: user._id
-      })
+        userId: user._id,
+      }),
     });
-
   } catch (error) {
-
+    console.error("Login error:", error);
     res.status(500).json({
       success: false,
-      data: encryptData({ message: "Server error" })
+      data: encryptData({ message: "Server error" }),
     });
-
   }
 };
