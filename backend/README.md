@@ -6,6 +6,8 @@
 > Secure Node.js/Express backend for a Task Management application with JWT authentication, AES-encrypted APIs, and MongoDB for persistence.
 
 
+> All APIs were tested using Postman to verify authentication, encryption, and task CRUD functionality.
+<table> <tr> <td align="center"><b>Register API</b><br><img src="Projecttestimage/Screenshot%202026-03-14%20132606.png" width="400"/></td> <td align="center"><b>Login API</b><br><img src="Projecttestimage/Screenshot%202026-03-14%20132653.png" width="400"/></td> </tr> <tr> <td align="center"><b>Create Task</b><br><img src="Projecttestimage/Screenshot%202026-03-14%20133241.png" width="400"/></td> <td align="center"><b>Get Tasks</b><br><img src="Projecttestimage/Screenshot%202026-03-14%20133312.png" width="400"/></td> </tr> <tr> <td align="center"><br><img src="Projecttestimage/Screenshot%202026-03-14%20133332.png" width="400"/></td> <td align="center"><br><img src="Projecttestimage/Screenshot%202026-03-14%20133345.png" width="400"/></td> </tr> <tr> <td align="center"><br><img src="Projecttestimage/Screenshot%202026-03-14%20133952.png" width="400"/></td> <td align="center"><br><img src="Projecttestimage/Screenshot%202026-03-14%20134054.png" width="400"/></td> </tr> <tr> <td align="center"><br><img src="Projecttestimage/Screenshot%202026-03-14%20134505.png" width="400"/></td> <td align="center"><b>Encrypted Response</b><br><img src="Projecttestimage/Screenshot%202026-03-14%20134516.png" width="400"/></td> </tr> <tr> <td align="center"><b>Unauthorized Access</b><br><img src="Projecttestimage/Screenshot%202026-03-14%20135018.png" width="400"/></td> <td align="center"><br><img src="Projecttestimage/Screenshot%202026-03-14%20135135.png" width="400"/></td> </tr> </table>
 
 ---
 
