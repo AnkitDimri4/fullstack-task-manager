@@ -18,12 +18,6 @@ Email: ankit1@test.com
 Password: 12345678
 ```
 
-### Desktop View
-<img src="frontend/public/DesktopView.png" width="1000"/>
-
-### Mobile View
-<img src="frontend/public/mobileview.jpeg" width="600"/>
----
 
 # Project Architecture
 
